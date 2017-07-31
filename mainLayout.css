@@ -1,0 +1,203 @@
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+
+/* GENERAL */
+
+body {
+  font-family: "source sans pro", sans-serif;
+}
+
+.container {
+  margin-top: 50px;
+}
+
+.col-md-3 {
+  line-height: 320px;
+  text-align: center;
+}
+
+.centered-container {
+  vertical-align: middle;
+  line-height: normal;
+  display: inline-block;
+}
+
+/* BUTTONS */
+
+.btn {
+  font-family: "source sans pro", sans-serif;
+  color: white;
+  background-color: #2c3e50;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover:disabled {
+  cursor: default;
+}
+
+/* LEFT COLUMN */
+
+#firstColumn h1 {
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #c0392b;
+  text-align: center;
+}
+
+#firstColumn .score {
+  text-align: center;
+}
+
+#score-num {
+  background-color: #bdc3c7;
+  display: inline-block;
+  padding: 3px 7px;
+  border-radius: 5px;
+  color: white;
+  margin-right: 2px;
+  font-weight: bold;
+}
+
+#score-num.red {
+  background-color: #c0392b;
+}
+
+#score-num.green {
+  background-color: #27ae60;
+}
+
+#score-num.blue {
+  background-color: #2980b9;
+}
+
+#score-num.purple {
+  background-color: #8e44ad;
+}
+
+#score-num.orange {
+  background-color: #e67e22;
+}
+
+#score-num.yellow {
+  background-color: #f1c40f;
+}
+
+#firstColumn input {
+  width: 112px;
+  display: block;
+  margin: 0 auto;
+}
+
+#firstColumn input:disabled {
+  background-color: #ecf0f1;
+}
+
+#firstColumn .new-game {
+  margin-bottom: 10px;
+}
+
+#firstColumn .new-game.highlight {
+  background-color: #c0392b;
+}
+
+/* CANDLE TABLE */
+
+#candy-table {
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#candy-table div {
+  position: absolute;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#candy-table div.red {
+  background-image: url("graphics/red-candy.png");
+}
+
+#candy-table div.green {
+  background-image: url("graphics/green-candy.png");
+}
+
+#candy-table div.blue {
+  background-image: url("graphics/blue-candy.png");
+}
+
+#candy-table div.purple {
+  background-image: url("graphics/purple-candy.png");
+}
+
+#candy-table div.orange {
+  background-image: url("graphics/orange-candy.png");
+}
+
+#candy-table div.yellow {
+  background-image: url("graphics/yellow-candy.png");
+}
+
+/* CANDY CANVAS */
+
+#candy-canvas {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  left: calc(50% - 160px);
+  height: 320px;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* RIGHT COLUMN */
+
+.move-text {
+  font-size: 24px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+#lastColumn input[type="text"] {
+  width: 50px;
+  font-size: 18px;
+  padding: 3px;
+  font-family: "source sans pro", sans-serif;
+  font-weight: 300;
+}
+
+.controls button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  background-color: #16a085;
+}
+
+.controls button:disabled {
+  background-color: #ecf0f1;
+}
+
+.controls-left {
+  margin-right: 20px;
+}
+
+.controls-right {
+  margin-left: 20px;
+}
+
+.crush-once {
+  background-color: #16a085;
+  margin-top: 30px;
+}
+
+.crush-once:disabled {
+  background-color: #ecf0f1;
+}

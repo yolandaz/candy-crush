@@ -1,0 +1,66 @@
+<!--
+CandyCrush
+Your Name: Yolanda Zhou
+Collaborators: no one
+External: Font Awesome, Flat UI colors
+-->
+<!DOCTYPE html>
+<html>
+<!--
+/* Copyright (c) 2017 MIT 6.813/6.831 course staff, all rights reserved.
+ * Redistribution of original or derived work requires permission of course staff.
+ */
+-->
+
+<head>
+  <meta charset="utf-8">
+  <title>CandyCrush</title>
+  <link rel="shortcut icon" type="image/png" href="graphics/red-candy.png"/>
+
+  <!-- Load style sheets -->
+  <link rel="stylesheet" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css">
+
+  <link rel="stylesheet" href="mainLayout.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,700" rel="stylesheet">
+
+  <!-- Use mobile-aware viewport -->
+  <meta name="viewport" content=
+    "width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Load any supplemental Javascript libraries here -->
+  <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.2/seedrandom.js">
+  </script>
+  <script src="candy.js"></script>
+  <script src="board.js"></script>
+  <script src="rules.js"></script>
+  <script src="custom.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" id="firstColumn">
+      <div class="centered-container">
+        <h1>Candy Crush</h1>
+        <p class="score"><span id="score-num">0</span> Points</p>
+        <input type="button" value="New Game" class="btn new-game" onclick="newGame()">
+        <input type="button" value="Show Move" class="btn show-move" onclick="showMove()">
+      </div>
+    </div>
+    <div class="col-md-8" id="mainColumn">
+      <div id="candy-table"></div>
+      <canvas id="candy-canvas" width="320" height="320"></canvas>
+    </div>
+  </div> <!-- class="row" -->
+</div> <!-- class="container" -->
+
+</body>
+
+</html>
